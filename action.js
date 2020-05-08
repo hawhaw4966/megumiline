@@ -26,6 +26,22 @@ async function getRequest() {
 
   ////// LINE Notify に送る ////////////////////////
 
+  let dogpic;
+
+  try {
+    dogpic = await axios.get(`http://shibe.online/api/shibes?count=3&urls=true&httpsUrls=true`);
+    console.log(dogpic.data[0]);
+  } catch (error) {
+    console.error(error);
+  }
+  let dogimage = dogpic.data[0];
+  // config のメッセージを送る部分 config.data を上書き
+  config.data =  qs.stringify({
+    message: '犬です！',
+    imageThumbnail: dogimage,
+    imageFullsize: dogimage,
+  });
+
   try {
     const responseLINENotify = await axios.request(config);
     console.log(responseLINENotify.data);

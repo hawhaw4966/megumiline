@@ -40,7 +40,8 @@ async function getRequest() {
     message: '犬です！',
     imageThumbnail: dogimage,
     imageFullsize: dogimage,
-  });GIT_CURL_VERBOSE=1 
+  });
+  // GIT_CURL_VERBOSE=1 
 
   ////// LINE Notify に送る ////////////////////////
 
