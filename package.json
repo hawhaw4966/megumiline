@@ -1,0 +1,23 @@
+{
+  "name": "node-axios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawhaw4966/megumiline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hawhaw4966/megumiline/issues"
+  },
+  "homepage": "https://github.com/hawhaw4966/megumiline#readme"
+}
