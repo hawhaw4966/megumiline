@@ -17,8 +17,8 @@ let config = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': 'Bearer ' + LINE_NOTIFY_TOKEN
     },
-    // data: qs.stringify({
-    //     message: 'ProtoOut Studioからの通知だよー！',
+    data: qs.stringify({
+        message: 'ProtoOut Studioからの通知だよー！',
     })
 }
 
@@ -37,7 +37,7 @@ async function getRequest() {
   let dogimage = dogpic.data[0];
   // config のメッセージを送る部分 config.data を上書き
   config.data =  qs.stringify({
-    message: 問題：何犬ですか？',
+    message: '質問：何犬ですか？',
     imageThumbnail: dogimage,
     imageFullsize: dogimage,
   });
